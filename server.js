@@ -8,7 +8,7 @@ const app = express();
 app.use('/bscss', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/bsjs', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
-app.use('/popperjs', express.static(__dirname + '/node_modules/popper.js/dist/umd'));
+app.use('/popperjs', express.static(__dirname + '/node_modules/@popperjs/core/dist/umd'));
 
 
 app.listen(3000,function(){
